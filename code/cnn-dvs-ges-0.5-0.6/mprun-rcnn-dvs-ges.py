@@ -6,7 +6,7 @@ path = "./"
 gpus = 4
 
 available = [i for i in range(gpus)]
-seed_list = [1111 * i for i in range(1, 7)]
+seed_list = [1111 * i for i in range(1, 5)]
 
 cnt = 0
 
@@ -36,9 +36,9 @@ DVS_GESTURE_XNN_Parameter["stage1_lr"]    = 5e-4
 DVS_GESTURE_XNN_Parameter["dropout"]      = 0.2
 DVS_GESTURE_XNN_Parameter["mode"]         = "train1"    # "train1" for train and "test1" for test
 DVS_GESTURE_XNN_Parameter["batch_size"]   = 36
-DVS_GESTURE_XNN_Parameter["seed"]         = seed_list[5:]
+DVS_GESTURE_XNN_Parameter["seed"]         = seed_list
 DVS_GESTURE_XNN_Parameter["ratio"]        = [0]
-DVS_GESTURE_XNN_Parameter["model"]        = ["hybrid"] 
+DVS_GESTURE_XNN_Parameter["model"]        = ["rnn", "snn", "hybrid"] 
 
 # RNN/SNN-Train/Test and HSTNN-Adaptation-Train/Test
 multi_task(path, DVS_GESTURE_XNN_Parameter)
