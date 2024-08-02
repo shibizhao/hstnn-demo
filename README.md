@@ -1,7 +1,7 @@
-# Hybrid Spatial-Temporal Neural Network (HSTNN)
+# Hybrid Spatiotemporal Neural Network (HSTNN)
 
 ## Introduction
-Hybrid Spatial-Temporal Neural Network (HSTNN) enables fine-grained hybridization of RNNs/LSTMs and SNNs. The three-stage training approach offers the flexible trade-off among accuracy, robustness, and computational cost.
+Hybrid Spatiotemporal Neural Network (HSTNN) enables fine-grained hybridization of RNNs/LSTMs and SNNs. The three-stage training approach offers the flexible trade-off among accuracy, robustness, and computational cost.
 
 ## Project Structure
 Currently, this repository demonstrates the main results of HSTNN accuracy in four selected datasets. The training approaches and codes are all listed in `experiments`. Each sub-directory in `experiments` are named as:
@@ -182,6 +182,10 @@ The profiled data is only reference values, especially for the epoch time, which
 | :----:| :----: | :----: | :----: | :----: |
 |RNN-PTB | 1 per instance | 600 MB ~ 650 MB| 1.9 GB ~ 2.0 GB | 30s ~ 60s |
 |RNN-SMNIST| 1 per instance | 350 MB ~ 400 MB | 1.9 GB ~ 2.0 GB | 33s ~ 47s |
-|RNN-DVSGes| 1 per instance | 510 MB ~ 600 MB | 2.5 GB ~ 2.8 GB | 20s ~ 50s (per 20 epochs)|
+|RCNN-DVSGes| 1 per instance | 7000 MB ~ 11500 MB | 3.8 GB ~ 4.4 GB | 20s ~ 30s (per 20 epochs)|
+|RCNN-NMNIST| 1 per instance | 4000 MB ~ 9000 MB | 11.0 GB ~ 12.0 GB | 100s ~ 200s|
 
 ## Publications
+
+Yujie Wu*, Bizhao Shi*, Zhong Zheng, Hanle Zheng, Fangwen Yu, Xue Liu, Guojie Luo, Lei Deng.
+"Adaptive spatiotemporal neural networks through complementary hybridization".
