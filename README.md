@@ -186,11 +186,11 @@ The profiled data is only reference values, especially for the epoch time, which
 |RCNN-NMNIST| 1 per instance | 4000 MB ~ 9000 MB | 11.0 GB ~ 12.0 GB | 100s ~ 200s|
 
 ## Publications
-'''
+```
 @article{wu2024adaptive,
   title={Adaptive spatiotemporal neural networks through complementary hybridization},
   author={Wu, Yujie and Shi, Bizhao and Zheng, Zhong and Zheng, Hanle and Yu, Fangwen and Liu, Xue and Luo, Guojie and Deng, Lei},
   journal={Nature Communications},
   year={2024},
 }
-'''
+```
